@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//假设第一个元素最大
+		// var get_max = arguments[0];
+		function get_max() {
+			// console.log(arguments);
+			//假设argyments[0]最大
+			var max = arguments[0];
+			for (var i = 0; i < arguments.length; i++) {
+				if (max < arguments[i]) {
+					max = arguments[i];
+				}
+			}
+			return max;
+		}
+
+		 var max = get_max(12,23,45,3,2);
+		 console.log(max)
+	</script>
+</body>
+</html>

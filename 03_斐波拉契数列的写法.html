@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//1 1 2  3 5 8 13
+		//指导前两个数就可以一知往后面推算
+		var n1 = 1, n2 = 1, n3;  
+		//这是循环的时候就不是从0开始了,要从第三个数开始
+
+		function fb(k) {
+			for (var i = 3; i <= k; i++	) {
+				n3 = n1 + n2;
+				n1 = n2;
+				n2 = n3;
+			}
+			return n3;
+		}
+		var num = fb(7);
+		console.log(num);
+	</script>
+</body>
+</html>
