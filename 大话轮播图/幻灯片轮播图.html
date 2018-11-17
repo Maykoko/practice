@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/幻灯片.css">
+        <link rel="stylesheet" href="./css/bootstrap/css/bootstrap4.css">
+        <title>Document</title>
+</head>
+
+<body>
+        <div id="slideBox" class="slideBox">
+                <div class="hd">
+                        <ul>
+                                <li class="btn btn-default active">1</li>
+                                                            
+                        </ul>
+                </div>
+                <div class="bd">
+                        <ul>
+                                <li><a href="javascript:;" target="_blank"><img src="./images/wf1.jpg" /></a></li>
+                                <li><a href="javascript:;" target="_blank"><img src="./images/wf2.jpg" /></a></li>
+                                <li><a href="javascript:;" target="_blank"><img src="./images/wf3.jpg" /></a></li>
+                                <li><a href="javascript:;" target="_blank"><img src="./images/wf4.jpg" /></a></li>
+                                <li><a href="javascript:;" target="_blank"><img src="./images/wf5.jpg" /></a></li>
+
+                        </ul>
+                </div>
+
+                <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                <a class="prev" href="javascript:void(0)"></a>
+                <a class="next" href="javascript:void(0)"></a>
+
+        </div>
+
+
+        <script src="./js/jquery-1.12.2.js"></script>
+        <script src="./js/jquery.SuperSlide.2.1.1.source.js"></script>
+
+        <script id="jsID" type="text/javascript">
+                var ary = location.href.split("&");
+                jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,delayTime:1000});
+        //        jQuery(".slideBox").slide( { mainCell:".bd ul", effect:ary[1],autoPlay:ary[2],trigger:ary[3],easing:ary[4],delayTime:ary[5],mouseOverStop:ary[6],pnLoop:ary[7] });
+        </script>
+
+                
+</body>
+
+</html>
