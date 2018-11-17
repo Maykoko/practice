@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+	<style>
+
+	</style>
+</head>
+<body>
+	<h1>判断闰年或平年小程序</h1>
+	
+	<input type="button" value="check" id="btn">
+	<input type="text" id="text">
+
+	<script>
+		var btn = document.getElementById('btn')
+		var text = document.getElementById('text')
+
+		btn.onclick = function () {
+			// console.log(111);
+			var value = text.value;
+			// console.log(value);
+			if (!Number(value)) {
+				alert(' error ')
+			}else if (Number(value) % 4 === 0 && Number(value) % 100 !==0) {
+				alert('run nian')
+			}else if (Number(value) % 400 === 0) {
+				alert('pin nian ')
+			}else {
+				alert('pin nian')
+			}
+				
+		}
+	</script>
+</body>
+</html>

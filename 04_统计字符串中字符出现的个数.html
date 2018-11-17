@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function get_sum(str) {
+			//创建一个空对象,用来统计次数
+			var json = {};
+			for (var i = 0; i < str.length; i++) {
+
+				// console.log(str.charAt(i));
+				if(!json[str[i]]) {
+					json[str[i]] = 1;
+
+				}else {
+					json[str[i]]++; 
+				}
+			}
+			console.log(json);
+		}
+		var str = 'gfsdkjdhjhcsajhdbfausgdaaassdfgakjh'
+		get_sum(str);
+	</script>
+</body>
+</html>
